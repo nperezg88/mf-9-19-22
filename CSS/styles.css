@@ -62,3 +62,8 @@ li a:hover{
 .me{
     height: 700px;
 }
+@media (max-width: 1200px){
+    .map{
+        width: 100%;
+    }
+}
