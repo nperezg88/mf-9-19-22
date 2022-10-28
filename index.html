@@ -11,19 +11,16 @@
   </head>
   <body>
 <!--start of navbar-->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="https://github.com/nperezg88/Backup/blob/master/img/Mountlogo.png?raw=true" alt="Mountain logo"></a>
+        <a class="navbar-brand" href="#"><img style="height: 30px;" src="https://github.com/nperezg88/Backup/blob/master/img/Mountlogo.png?raw=true" alt="Mountain logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -36,6 +33,9 @@
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="https://nperezg88.github.io/Backup/" target="_blank">Website For Beginners</a></li>
               </ul>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+            </li>
             </li>
           </ul>
         </div>
@@ -47,11 +47,11 @@
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold pt-5">Nestor Perez</h1>
           <h2 class="fs-4 pt-3">Aspiring Developer</h2>
-          <a style="color: white" type="button" class="button p-2 mt-5 role" href="#" role="button">Learn More</a>
+          <a style="color: white" type="button" class="button p-2 mt-5 role" href="#project" role="button">Learn More</a>
         </div>
       </div>
 <!--start of about me-->
-      <div class="container marketing">
+      <div class="container marketing" id="about">
         <div class="row featurette">
           <div class="col-md-6">
             <h2 class="mt-5">About Me</h2>
@@ -85,7 +85,7 @@
             </div>  
           </div>
         </div>
-        <hr class="featurette divider mt-5">
+        <hr class="featurette divider mt-5" id="project">
 <!--Start of Projects section-->
         <h2 class="text-center mt-4 fs-1">Projects</h2>
         <div class="row mt-4">
@@ -115,14 +115,19 @@
             </p>
           </div>
         </div>
-        <hr class="featurette divider mt-5">
+        <hr class="featurette divider mt-5" id="contact">
 <!--Start of Contact Form-->
+        <h2 class="text-center mt-4 fs-1">Let's Connect</h2>
         <div class="container2 col-md-6 bg-dark">
           <form action="">
               <label style="color: white;" for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your Name..">
               <label style="color: white;" for="lname">Last Name</label>
               <input type="text" id="lname" name="lastname" placeholder="Your Last Name..">
+              <label style="color: white;" for="pnumber">Phone Number</label>
+              <input type="text" id="pnumber" name="phonenumber" placeholder="Your Phone Number..">
+              <label style="color: white;" for="email">Email</label>
+              <input type="text" id="email" name="e-mail" placeholder="Your Email@..">
               <label style="color: white;" for="country">Country</label>
               <select name="country" id="country">
                   <option value="USA">USA</option>
@@ -130,7 +135,7 @@
                   <option value="Mexico">Mexico</option>
               </select>
               <label style="color: white;" for="subject">Subject</label>
-              <textarea name="subject" id="subject" cols="30" rows="10" placeholder="write something"></textarea>
+              <textarea name="subject" id="subject" cols="30" rows="3" placeholder="write something"></textarea>
               <input type="submit" value="Submit">
           </form>
         </div>
@@ -138,12 +143,14 @@
         <div class="col-md-6 mt-5">
           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204504.28567646892!2d-119.93464594857551!3d36.78545132148885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945de1549e4e9d%3A0x7b12406449a3b811!2sFresno%2C%20CA!5e0!3m2!1sen!2sus!4v1663368411038!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <hr class="featurette divider mt-5">
 <!--Footer-->
         <footer class="mt-5 bg-dark p-2 fs-5 text-light">
           <ul class="d-flex justify-content-center">
               <li class="d-inline p-3"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
               <li class="d-inline p-3"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
               <li class="d-inline p-3"><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="d-inline p-3"><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
           </ul>
         </footer>
       </div>
